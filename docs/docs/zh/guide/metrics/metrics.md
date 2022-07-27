@@ -38,7 +38,7 @@ metrics:
 
 metrics exporter端口`server.port`是在application.yaml里定义的: master: `server.port: 5679`, worker: `server.port: 1235`, alert: `server.port: 50053`, api: `server.port: 12345`.
 
-举例来说，您可通过访问链接获取`curl http://localhost:5679/actuator/prometheus`master metrics。
+举例来说，您可通过访问链接`curl http://localhost:5679/actuator/prometheus`获取master metrics。
 
 ## 命名规则 & 命名映射
 
