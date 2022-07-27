@@ -17,7 +17,7 @@ cd dolphinscheduler-meter/src/main/resources/grafana-demo
 docker compose up
 ```
 
-然后，您即可通过http://localhost/3001`链接访问`Grafana`面板。    
+然后，您即可通过`http://localhost/3001` 链接访问`Grafana`面板。    
 
 ![image.png](../../../../img/metrics/metrics-master.png)
 ![image.png](../../../../img/metrics/metrics-worker.png)
@@ -54,7 +54,7 @@ metrics exporter端口`server.port`是在application.yaml里定义的: master: `
 - LONG_TASK_TIMER: 如果没有以`_timer_seconds`结尾，会自动加上此后缀
 - GAUGE: 如果没有以`_baseUnit`结尾，会自动加上此后缀
 
-## Dolphin Scheduler指标清单
+## Dolphin Scheduler 指标清单
 
 - Dolphin Scheduler按照组成部分进行指标分类，如：`master server`, `worker server`, `api server` and `alert server`。
 - 尽管任务 / 工作流相关指标是由 `master server` 和 `worker server` 透出的，我们将这两块指标单独罗列出来，以方便您对任务 / 工作流的监控。  
